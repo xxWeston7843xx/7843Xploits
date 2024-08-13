@@ -1,0 +1,746 @@
+game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "7843Xploits V3 Loaded.",
+	Text = "7843Xploits V3 Loaded. Press Insert To Toggle The Interface.",
+	Duration = 3.5
+})
+
+local _7843Xploits = Instance.new("ScreenGui")
+local background = Instance.new("Frame")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local main = Instance.new("Frame")
+local textbox = Instance.new("ScrollingFrame")
+local EditorFrame = Instance.new("ScrollingFrame")
+local Source = Instance.new("TextBox")
+local Comments_ = Instance.new("TextLabel")
+local Globals_ = Instance.new("TextLabel")
+local Keywords_ = Instance.new("TextLabel")
+local RemoteHighlight_ = Instance.new("TextLabel")
+local Strings_ = Instance.new("TextLabel")
+local Tokens_ = Instance.new("TextLabel")
+local Numbers_ = Instance.new("TextLabel")
+local Lines = Instance.new("TextLabel")
+local security = Instance.new("TextLabel")
+local topbar = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local close = Instance.new("TextButton")
+local scripthub = Instance.new("Frame")
+local infyield = Instance.new("TextButton")
+local prizzlife = Instance.new("TextButton")
+local inertia = Instance.new("TextButton")
+local clxshed = Instance.new("TextButton")
+local bapn = Instance.new("TextButton")
+local benpcordie = Instance.new("TextButton")
+local execute = Instance.new("TextButton")
+local executeButton = Instance.new("ImageButton")
+local clear = Instance.new("TextButton")
+local clearButton = Instance.new("ImageButton")
+local UIGradient = Instance.new("UIGradient")
+local UICorner = Instance.new("UICorner")
+
+--Properties:
+
+_7843Xploits.Name = "7843Xploits"
+_7843Xploits.Parent = game.CoreGui
+_7843Xploits.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+background.Name = "background"
+background.Parent = _7843Xploits
+background.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+background.BackgroundTransparency = 0.700
+background.BorderColor3 = Color3.fromRGB(0, 0, 0)
+background.BorderSizePixel = 0
+background.Size = UDim2.new(0.99937731, 0, 0.999327004, 0)
+background.ZIndex = 0
+
+UIAspectRatioConstraint.Parent = _7843Xploits
+UIAspectRatioConstraint.AspectRatio = 2.162
+
+main.Name = "main"
+main.Parent = _7843Xploits
+main.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+main.BorderSizePixel = 0
+main.Position = UDim2.new(0.28019923, 0, 0.282637835, 0)
+main.Size = UDim2.new(0, 592, 0, 288)
+
+textbox.Name = "textbox"
+textbox.Parent = main
+textbox.Active = true
+textbox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+textbox.BorderColor3 = Color3.fromRGB(100, 100, 100)
+textbox.BorderSizePixel = 0
+textbox.Position = UDim2.new(0.0101353414, 0, 0.100323625, 0)
+textbox.Size = UDim2.new(0, 476, 0, 237)
+textbox.CanvasSize = UDim2.new(0, 0, 50, 0)
+textbox.ScrollBarThickness = 5
+
+EditorFrame.Name = "EditorFrame"
+EditorFrame.Parent = textbox
+EditorFrame.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+EditorFrame.BackgroundTransparency = 1.000
+EditorFrame.BorderColor3 = Color3.fromRGB(61, 61, 61)
+EditorFrame.Size = UDim2.new(1, 0, 1, 0)
+EditorFrame.ZIndex = 3
+EditorFrame.BottomImage = "rbxassetid://148970562"
+EditorFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
+EditorFrame.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
+EditorFrame.MidImage = "rbxassetid://148970562"
+EditorFrame.ScrollBarThickness = 5
+EditorFrame.TopImage = "rbxassetid://148970562"
+
+Source.Name = "Source"
+Source.Parent = EditorFrame
+Source.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Source.BackgroundTransparency = 1.000
+Source.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Source.Position = UDim2.new(0, 30, 0, 0)
+Source.Size = UDim2.new(0.937888205, 0, 1, 0)
+Source.ZIndex = 3
+Source.ClearTextOnFocus = false
+Source.Font = Enum.Font.Code
+Source.MultiLine = true
+Source.PlaceholderColor3 = Color3.fromRGB(204, 204, 204)
+Source.Text = ""
+Source.TextColor3 = Color3.fromRGB(204, 204, 204)
+Source.TextSize = 15.000
+Source.TextXAlignment = Enum.TextXAlignment.Left
+Source.TextYAlignment = Enum.TextYAlignment.Top
+
+Comments_.Name = "Comments_"
+Comments_.Parent = Source
+Comments_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Comments_.BackgroundTransparency = 1.000
+Comments_.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Comments_.Size = UDim2.new(1, 0, 1, 0)
+Comments_.ZIndex = 5
+Comments_.Font = Enum.Font.Code
+Comments_.Text = ""
+Comments_.TextColor3 = Color3.fromRGB(59, 200, 59)
+Comments_.TextSize = 15.000
+Comments_.TextXAlignment = Enum.TextXAlignment.Left
+Comments_.TextYAlignment = Enum.TextYAlignment.Top
+
+Globals_.Name = "Globals_"
+Globals_.Parent = Source
+Globals_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Globals_.BackgroundTransparency = 1.000
+Globals_.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Globals_.Size = UDim2.new(1, 0, 1, 0)
+Globals_.ZIndex = 5
+Globals_.Font = Enum.Font.Code
+Globals_.Text = ""
+Globals_.TextColor3 = Color3.fromRGB(132, 214, 247)
+Globals_.TextSize = 15.000
+Globals_.TextXAlignment = Enum.TextXAlignment.Left
+Globals_.TextYAlignment = Enum.TextYAlignment.Top
+
+Keywords_.Name = "Keywords_"
+Keywords_.Parent = Source
+Keywords_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Keywords_.BackgroundTransparency = 1.000
+Keywords_.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Keywords_.Size = UDim2.new(1, 0, 1, 0)
+Keywords_.ZIndex = 5
+Keywords_.Font = Enum.Font.Code
+Keywords_.Text = ""
+Keywords_.TextColor3 = Color3.fromRGB(248, 109, 124)
+Keywords_.TextSize = 15.000
+Keywords_.TextXAlignment = Enum.TextXAlignment.Left
+Keywords_.TextYAlignment = Enum.TextYAlignment.Top
+
+RemoteHighlight_.Name = "RemoteHighlight_"
+RemoteHighlight_.Parent = Source
+RemoteHighlight_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RemoteHighlight_.BackgroundTransparency = 1.000
+RemoteHighlight_.BorderColor3 = Color3.fromRGB(27, 42, 53)
+RemoteHighlight_.Size = UDim2.new(1, 0, 1, 0)
+RemoteHighlight_.ZIndex = 5
+RemoteHighlight_.Font = Enum.Font.Code
+RemoteHighlight_.Text = ""
+RemoteHighlight_.TextColor3 = Color3.fromRGB(0, 144, 255)
+RemoteHighlight_.TextSize = 15.000
+RemoteHighlight_.TextXAlignment = Enum.TextXAlignment.Left
+RemoteHighlight_.TextYAlignment = Enum.TextYAlignment.Top
+
+Strings_.Name = "Strings_"
+Strings_.Parent = Source
+Strings_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Strings_.BackgroundTransparency = 1.000
+Strings_.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Strings_.Size = UDim2.new(1, 0, 1, 0)
+Strings_.ZIndex = 5
+Strings_.Font = Enum.Font.Code
+Strings_.Text = ""
+Strings_.TextColor3 = Color3.fromRGB(173, 241, 149)
+Strings_.TextSize = 15.000
+Strings_.TextXAlignment = Enum.TextXAlignment.Left
+Strings_.TextYAlignment = Enum.TextYAlignment.Top
+
+Tokens_.Name = "Tokens_"
+Tokens_.Parent = Source
+Tokens_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tokens_.BackgroundTransparency = 1.000
+Tokens_.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Tokens_.Size = UDim2.new(1, 0, 1, 0)
+Tokens_.ZIndex = 5
+Tokens_.Font = Enum.Font.Code
+Tokens_.Text = ""
+Tokens_.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tokens_.TextSize = 15.000
+Tokens_.TextXAlignment = Enum.TextXAlignment.Left
+Tokens_.TextYAlignment = Enum.TextYAlignment.Top
+
+Numbers_.Name = "Numbers_"
+Numbers_.Parent = Source
+Numbers_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Numbers_.BackgroundTransparency = 1.000
+Numbers_.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Numbers_.Size = UDim2.new(1, 0, 1, 0)
+Numbers_.ZIndex = 4
+Numbers_.Font = Enum.Font.Code
+Numbers_.Text = ""
+Numbers_.TextColor3 = Color3.fromRGB(255, 198, 0)
+Numbers_.TextSize = 15.000
+Numbers_.TextXAlignment = Enum.TextXAlignment.Left
+Numbers_.TextYAlignment = Enum.TextYAlignment.Top
+
+Lines.Name = "Lines"
+Lines.Parent = EditorFrame
+Lines.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Lines.BackgroundTransparency = 1.000
+Lines.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Lines.Size = UDim2.new(0, 30, 5, 0)
+Lines.ZIndex = 4
+Lines.Font = Enum.Font.Code
+Lines.Text = "1"
+Lines.TextColor3 = Color3.fromRGB(255, 255, 255)
+Lines.TextSize = 15.000
+Lines.TextYAlignment = Enum.TextYAlignment.Top
+
+security.Name = "security"
+security.Parent = textbox
+security.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+security.BorderColor3 = Color3.fromRGB(27, 42, 53)
+security.Size = UDim2.new(0, 552, 0, 258)
+security.Visible = false
+security.Font = Enum.Font.SourceSans
+security.TextColor3 = Color3.fromRGB(0, 0, 0)
+security.TextSize = 14.000
+
+topbar.Name = "topbar"
+topbar.Parent = main
+topbar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+topbar.BackgroundTransparency = 1.000
+topbar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+topbar.BorderSizePixel = 0
+topbar.Size = UDim2.new(0, 592, 0, 31)
+
+TextLabel.Parent = topbar
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 203, 0, 31)
+TextLabel.Font = Enum.Font.SciFi
+TextLabel.Text = "7843 Xploits V3"
+TextLabel.TextColor3 = Color3.fromRGB(129, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextStrokeTransparency = 0.000
+TextLabel.TextWrapped = true
+
+close.Name = "close"
+close.Parent = topbar
+close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+close.BackgroundTransparency = 1.000
+close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+close.BorderSizePixel = 0
+close.Position = UDim2.new(0.947635114, 0, 0, 0)
+close.Size = UDim2.new(0, 31, 0, 31)
+close.Font = Enum.Font.SciFi
+close.Text = "X"
+close.TextColor3 = Color3.fromRGB(129, 0, 0)
+close.TextScaled = true
+close.TextSize = 14.000
+close.TextWrapped = true
+
+scripthub.Name = "scripthub"
+scripthub.Parent = main
+scripthub.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+scripthub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+scripthub.BorderSizePixel = 0
+scripthub.Position = UDim2.new(0.826013505, 0, 0.100323625, 0)
+scripthub.Size = UDim2.new(0, 97, 0, 237)
+
+infyield.Name = "infyield"
+infyield.Parent = scripthub
+infyield.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+infyield.BackgroundTransparency = 1.000
+infyield.BorderColor3 = Color3.fromRGB(0, 0, 0)
+infyield.BorderSizePixel = 0
+infyield.Size = UDim2.new(0, 97, 0, 20)
+infyield.Font = Enum.Font.SciFi
+infyield.Text = "Infinite Yield"
+infyield.TextColor3 = Color3.fromRGB(129, 0, 0)
+infyield.TextScaled = true
+infyield.TextSize = 14.000
+infyield.TextWrapped = true
+
+prizzlife.Name = "prizzlife"
+prizzlife.Parent = scripthub
+prizzlife.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+prizzlife.BackgroundTransparency = 1.000
+prizzlife.BorderColor3 = Color3.fromRGB(0, 0, 0)
+prizzlife.BorderSizePixel = 0
+prizzlife.Position = UDim2.new(0, 0, 0.084388189, 0)
+prizzlife.Size = UDim2.new(0, 97, 0, 20)
+prizzlife.Font = Enum.Font.SciFi
+prizzlife.Text = "Prizz Life"
+prizzlife.TextColor3 = Color3.fromRGB(129, 0, 0)
+prizzlife.TextScaled = true
+prizzlife.TextSize = 14.000
+prizzlife.TextWrapped = true
+
+inertia.Name = "inertia"
+inertia.Parent = scripthub
+inertia.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+inertia.BackgroundTransparency = 1.000
+inertia.BorderColor3 = Color3.fromRGB(0, 0, 0)
+inertia.BorderSizePixel = 0
+inertia.Position = UDim2.new(0, 0, 0.168776378, 0)
+inertia.Size = UDim2.new(0, 97, 0, 20)
+inertia.Font = Enum.Font.SciFi
+inertia.Text = "Inertia"
+inertia.TextColor3 = Color3.fromRGB(129, 0, 0)
+inertia.TextScaled = true
+inertia.TextSize = 14.000
+inertia.TextWrapped = true
+
+clxshed.Name = "clxshed"
+clxshed.Parent = scripthub
+clxshed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+clxshed.BackgroundTransparency = 1.000
+clxshed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+clxshed.BorderSizePixel = 0
+clxshed.Position = UDim2.new(0, 0, 0.25316456, 0)
+clxshed.Size = UDim2.new(0, 97, 0, 20)
+clxshed.Font = Enum.Font.SciFi
+clxshed.Text = "CLXSHED"
+clxshed.TextColor3 = Color3.fromRGB(129, 0, 0)
+clxshed.TextScaled = true
+clxshed.TextSize = 14.000
+clxshed.TextWrapped = true
+
+bapn.Name = "bapn"
+bapn.Parent = scripthub
+bapn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+bapn.BackgroundTransparency = 1.000
+bapn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+bapn.BorderSizePixel = 0
+bapn.Position = UDim2.new(0, 0, 0.337552756, 0)
+bapn.Size = UDim2.new(0, 97, 0, 20)
+bapn.Font = Enum.Font.SciFi
+bapn.Text = "Be A Parkour Ninja"
+bapn.TextColor3 = Color3.fromRGB(129, 0, 0)
+bapn.TextScaled = true
+bapn.TextSize = 14.000
+bapn.TextWrapped = true
+
+benpcordie.Name = "benpcordie"
+benpcordie.Parent = scripthub
+benpcordie.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+benpcordie.BackgroundTransparency = 1.000
+benpcordie.BorderColor3 = Color3.fromRGB(0, 0, 0)
+benpcordie.BorderSizePixel = 0
+benpcordie.Position = UDim2.new(0, 0, 0.421940923, 0)
+benpcordie.Size = UDim2.new(0, 97, 0, 20)
+benpcordie.Font = Enum.Font.SciFi
+benpcordie.Text = "Be NPC Or Die"
+benpcordie.TextColor3 = Color3.fromRGB(129, 0, 0)
+benpcordie.TextScaled = true
+benpcordie.TextSize = 14.000
+benpcordie.TextWrapped = true
+
+execute.Name = "execute"
+execute.Parent = main
+execute.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+execute.BorderColor3 = Color3.fromRGB(0, 0, 0)
+execute.BorderSizePixel = 0
+execute.Position = UDim2.new(0.719594598, 0, 0.00970873795, 0)
+execute.Size = UDim2.new(0, 28, 0, 28)
+execute.Font = Enum.Font.SciFi
+execute.Text = ""
+execute.TextColor3 = Color3.fromRGB(255, 255, 255)
+execute.TextScaled = true
+execute.TextSize = 14.000
+execute.TextWrapped = true
+
+executeButton.Name = "executeButton"
+executeButton.Parent = execute
+executeButton.Active = false
+executeButton.BackgroundTransparency = 1.000
+executeButton.LayoutOrder = 5
+executeButton.Selectable = false
+executeButton.Size = UDim2.new(0, 28, 0, 28)
+executeButton.ZIndex = 2
+executeButton.Image = "rbxassetid://3926305904"
+executeButton.ImageColor3 = Color3.fromRGB(129, 0, 0)
+executeButton.ImageRectOffset = Vector2.new(604, 764)
+executeButton.ImageRectSize = Vector2.new(36, 36)
+
+clear.Name = "clear"
+clear.Parent = main
+clear.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
+clear.BorderSizePixel = 0
+clear.Position = UDim2.new(0.766891897, 0, 0.00970873795, 0)
+clear.Size = UDim2.new(0, 28, 0, 28)
+clear.Font = Enum.Font.SciFi
+clear.Text = ""
+clear.TextColor3 = Color3.fromRGB(255, 255, 255)
+clear.TextScaled = true
+clear.TextSize = 14.000
+clear.TextWrapped = true
+
+clearButton.Name = "clearButton"
+clearButton.Parent = clear
+clearButton.Active = false
+clearButton.BackgroundTransparency = 1.000
+clearButton.Selectable = false
+clearButton.Size = UDim2.new(0, 28, 0, 28)
+clearButton.ZIndex = 2
+clearButton.Image = "rbxassetid://3926305904"
+clearButton.ImageColor3 = Color3.fromRGB(129, 0, 0)
+clearButton.ImageRectOffset = Vector2.new(924, 724)
+clearButton.ImageRectSize = Vector2.new(36, 36)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(21, 0, 0)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(44, 0, 0))}
+UIGradient.Parent = main
+
+UICorner.Parent = main
+
+-- Scripts:
+
+local function DQMXZ_fake_script() -- textbox.LocalScript 
+	local script = Instance.new('LocalScript', textbox)
+
+	-- Dont change this script or the textbox wont look good anymore
+	
+	local l__Source__1 = script.Parent.EditorFrame.Source;
+	local function u1(p1, p2)
+		local v2 = {};
+		for v3, v4 in pairs(p2) do
+			v2[v4] = true;
+		end;
+		local u2 = {
+			["="] = true, 
+			["."] = true, 
+			[","] = true, 
+			["("] = true, 
+			[")"] = true, 
+			["["] = true, 
+			["]"] = true, 
+			["{"] = true, 
+			["}"] = true, 
+			[":"] = true, 
+			["*"] = true, 
+			["/"] = true, 
+			["+"] = true, 
+			["-"] = true, 
+			["%"] = true, 
+			[";"] = true, 
+			["~"] = true
+		};
+		return p1:gsub(".", function(p3)
+			if u2[p3] == nil then
+				return p3;
+			end;
+			return " ";
+		end):gsub("%S+", function(p4)
+			if v2[p4] ~= nil then
+				return p4;
+			end;
+			return (" "):rep(#p4);
+		end);
+	end;
+	local u3 = { "and", "break", "do", "else", "elseif", "end", "false", "for", "function", "goto", "if", "in", "local", "nil", "not", "or", "repeat", "return", "then", "true", "until", "while" };
+	local u4 = { "getrawmetatable", "game", "workspace", "script", "math", "string", "table", "print", "wait", "BrickColor", "Color3", "next", "pairs", "ipairs", "select", "unpack", "Instance", "Vector2", "Vector3", "CFrame", "Ray", "UDim2", "Enum", "assert", "error", "warn", "tick", "loadstring", "_G", "shared", "getfenv", "setfenv", "newproxy", "setmetatable", "getmetatable", "os", "debug", "pcall", "ypcall", "xpcall", "rawequal", "rawset", "rawget", "tonumber", "tostring", "type", "typeof", "_VERSION", "coroutine", "delay", "require", "spawn", "LoadLibrary", "settings", "stats", "time", "UserSettings", "version", "Axes", "ColorSequence", "Faces", "ColorSequenceKeypoint", "NumberRange", "NumberSequence", "NumberSequenceKeypoint", "gcinfo", "elapsedTime", "collectgarbage", "PhysicalProperties", "Rect", "Region3", "Region3int16", "UDim", "Vector2int16", "Vector3int16" };
+	local function u5(p5)
+		local u6 = {
+			["="] = true, 
+			["."] = true, 
+			[","] = true, 
+			["("] = true, 
+			[")"] = true, 
+			["["] = true, 
+			["]"] = true, 
+			["{"] = true, 
+			["}"] = true, 
+			[":"] = true, 
+			["*"] = true, 
+			["/"] = true, 
+			["+"] = true, 
+			["-"] = true, 
+			["%"] = true, 
+			[";"] = true, 
+			["~"] = true
+		};
+		local u7 = "";
+		p5:gsub(".", function(p6)
+			if u6[p6] ~= nil then
+				u7 = u7 .. p6;
+				return;
+			end;
+			if p6 == "\n" then
+				u7 = u7 .. "\n";
+				return;
+			end;
+			if p6 == "\t" then
+				u7 = u7 .. "\t";
+				return;
+			end;
+			u7 = u7 .. " ";
+		end);
+		return "";
+	end;
+	local l__Lines__8 = l__Source__1.Parent.Lines;
+	local function v5(p7)
+		if p7 == "Text" then
+			l__Source__1.Text = l__Source__1.Text:gsub("\r", "");
+			l__Source__1.Text = l__Source__1.Text:gsub("\t", "      ");
+			local l__Text__6 = l__Source__1.Text;
+			l__Source__1.Keywords_.Text = u1(l__Text__6, u3);
+			l__Source__1.Globals_.Text = u1(l__Text__6, u4);
+			l__Source__1.RemoteHighlight_.Text = u1(l__Text__6, { "FireServer", "fireServer", "InvokeServer", "invokeServer" });
+			l__Source__1.Tokens_.Text = u5(l__Text__6);
+			local u9 = "";
+			l__Text__6:gsub(".", function(p8)
+				if tonumber(p8) ~= nil then
+					u9 = u9 .. p8;
+					return;
+				end;
+				if p8 == "\n" then
+					u9 = u9 .. "\n";
+					return;
+				end;
+				if p8 == "\t" then
+					u9 = u9 .. "\t";
+					return;
+				end;
+				u9 = u9 .. " ";
+			end);
+			l__Source__1.Numbers_.Text = u9;
+			local u10 = false;
+			local u11 = "";
+			l__Text__6:gsub(".", function(p9)
+				if u10 == false and p9 == "\"" then
+					u10 = true;
+				elseif u10 == true and p9 == "\"" then
+					u10 = false;
+				end;
+				if u10 == false and p9 == "\"" then
+					u11 = u11 .. "\"";
+					return;
+				end;
+				if p9 == "\n" then
+					u11 = u11 .. "\n";
+					return;
+				end;
+				if p9 == "\t" then
+					u11 = u11 .. "\t";
+					return;
+				end;
+				if u10 == true then
+					u11 = u11 .. p9;
+					return;
+				end;
+				if u10 == false then
+					u11 = u11 .. " ";
+				end;
+			end);
+			l__Source__1.Strings_.Text = u11;
+			local u12 = 1;
+			l__Text__6:gsub("\n", function()
+				u12 = u12 + 1;
+			end);
+			l__Lines__8.Text = "";
+			for v7 = 1, u12 do
+				l__Lines__8.Text = l__Lines__8.Text .. v7 .. "\n";
+			end;
+		end;
+	end;
+	v5("Text");
+	l__Source__1.Changed:Connect(v5);
+	
+end
+coroutine.wrap(DQMXZ_fake_script)()
+local function ZAQSMRI_fake_script() -- infyield.LocalScript 
+	local script = Instance.new('LocalScript', infyield)
+
+	local textbox = script.Parent.Parent.Parent.textbox.EditorFrame.Source
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		textbox.Text = 'loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()'
+	end)
+end
+coroutine.wrap(ZAQSMRI_fake_script)()
+local function OYPTVY_fake_script() -- prizzlife.LocalScript 
+	local script = Instance.new('LocalScript', prizzlife)
+
+	local textbox = script.Parent.Parent.Parent.textbox.EditorFrame.Source
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		textbox.Text = 'loadstring(game:HttpGet("https://raw.githubusercontent.com/elliexmln/PrizzLife/main/pladmin.lua"))()'
+	end)
+end
+coroutine.wrap(OYPTVY_fake_script)()
+local function XGFSDSJ_fake_script() -- inertia.LocalScript 
+	local script = Instance.new('LocalScript', inertia)
+
+	local textbox = script.Parent.Parent.Parent.textbox.EditorFrame.Source
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		textbox.Text = 'loadstring(game:HttpGet("https://raw.githubusercontent.com/xxWeston7843xx/inertia/main/inertiaRoblox"))()'
+	end)
+end
+coroutine.wrap(XGFSDSJ_fake_script)()
+local function KKIJ_fake_script() -- clxshed.LocalScript 
+	local script = Instance.new('LocalScript', clxshed)
+
+	local textbox = script.Parent.Parent.Parent.textbox.EditorFrame.Source
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		textbox.Text = 'loadstring(game:HttpGet("https://pastebin.com/raw/gAGEJyeK"))()'
+	end)
+end
+coroutine.wrap(KKIJ_fake_script)()
+local function DLOSARL_fake_script() -- bapn.LocalScript 
+	local script = Instance.new('LocalScript', bapn)
+
+	local textbox = script.Parent.Parent.Parent.textbox.EditorFrame.Source
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		textbox.Text = 'loadstring(game:HttpGet("https://scriptblox.com/raw/Be-A-Parkour-Ninja-Ninj-script-7309"))()'
+	end)
+end
+coroutine.wrap(DLOSARL_fake_script)()
+local function DRJXH_fake_script() -- benpcordie.LocalScript 
+	local script = Instance.new('LocalScript', benpcordie)
+
+	local textbox = script.Parent.Parent.Parent.textbox.EditorFrame.Source
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		textbox.Text = 'loadstring(game:HttpGet("https://raw.githubusercontent.com/Bac0nHck/Scripts/main/BeNpcOrDie"))("t.me/arceusxscripts")'
+	end)
+end
+coroutine.wrap(DRJXH_fake_script)()
+local function ITVLG_fake_script() -- executeButton.LocalScript 
+	local script = Instance.new('LocalScript', executeButton)
+
+		local executeButton = script.Parent
+		local codeTextBox = script.Parent.Parent.Parent:WaitForChild("textbox"):WaitForChild("EditorFrame"):WaitForChild("Source")
+		local debounce = false
+	
+		executeButton.MouseButton1Click:Connect(function()
+			if debounce then
+				return
+			end
+			debounce = true
+	
+			local code = codeTextBox.Text
+	
+			if code == "" then
+				
+				debounce = false
+				return
+			end
+	
+			local loadFunc, loadError = loadstring(code)
+	
+			if loadFunc then
+				local success, runError = pcall(loadFunc)
+				if not success then
+					
+				end
+			else
+				
+			end
+	
+			debounce = false
+		end)
+	
+end
+coroutine.wrap(ITVLG_fake_script)()
+local function UFYMHNB_fake_script() -- clearButton.LocalScript 
+	local script = Instance.new('LocalScript', clearButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.textbox.EditorFrame.Source.Text = ""
+	end)
+end
+coroutine.wrap(UFYMHNB_fake_script)()
+local function RMTDOA_fake_script() -- main.keybinds 
+	local script = Instance.new('LocalScript', main)
+
+	local main = script.Parent
+	local uip = game:GetService("UserInputService")
+	local background = script.Parent.Parent.background
+	
+	uip.InputBegan:Connect(function(input)
+		if input.KeyCode == Enum.KeyCode.Insert then
+			main.Visible = not main.Visible
+			background.Visible = not background.Visible
+		end 
+	end)
+	
+	script.Parent.topbar.close.MouseButton1Click:Connect(function()
+		main.Visible = false
+		background.Visible = false
+	end)
+	
+	
+	
+end
+coroutine.wrap(RMTDOA_fake_script)()
+local function FIZG_fake_script() -- main.Dragify 
+	local script = Instance.new('LocalScript', main)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		dragSpeed = 0.15
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.15), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	dragify(script.Parent)
+	
+end
+coroutine.wrap(FIZG_fake_script)()
